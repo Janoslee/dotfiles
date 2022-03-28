@@ -44,3 +44,4 @@ URxvt.externalBorder: 0
 URxvt.internalBorder: 4
 URxvt.scrollBar: false
 URxvt.saveLines: 5000
+URxvt.perl-ext-common: selection-to-clipboard
