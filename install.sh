@@ -19,3 +19,10 @@ ln -s "$HOME/PersonalProjects/dotfiles/X11" "$HOME/.config"
 ########
 rm -rf "$HOME/.config/i3"
 ln -s "$HOME/PersonalProjects/dotfiles/i3" "$HOME/.config"
+
+#######
+# zsh #
+#######
+mkdir -p "$HOME/.config/zsh"
+ln -sf "$HOME/PersonalProjects/dotfiles/zsh/.zshenv" "$HOME"
+ln -sf "$HOME/PersonalProjects/dotfiles/zsh/.zshrc" "$HOME/.config/zsh"
