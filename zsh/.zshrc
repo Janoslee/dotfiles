@@ -20,3 +20,6 @@ setopt PUSHD_IGNORE_DUPS
 
 # Do not print the directory stack after using pushd or popd
 setopt PUSHD_SILENT
+
+# Carregar Xinit por causa do rxvt
+source ~/.xinitrc
