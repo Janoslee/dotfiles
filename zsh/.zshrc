@@ -42,10 +42,13 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-source /usr/share/zsh-syntax-highlighting 
 source ~/PersonalProjects/dotfiles/zsh/external/bd.zsh
 
 if [ $(command -v "fzf") ]; then
         #source /usr/share/fzf/completion.zsh
         source /usr/share/fzf/shell/key-bindings.zsh
 fi
+
+
+# should be always the last
+source /usr/share/zsh-syntax-highlighting 

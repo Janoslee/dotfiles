@@ -133,7 +133,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# move focused container to workspace
+# move focused container to workstartspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -151,6 +151,15 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# start all 
+workspace $ws1 output eDP-1
+workspace $ws5 output eDP-1
+workspace $ws3 output eDP-1
+exec --no-startup-id i3-msg 'workspace $ws5; exec ~/.joplin/Joplin.AppImage'
+exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/brave-browser-stable'
+#exec --no-startup-id i3-msg 'workspace $ws2; exec /usr/bin/google-chrome-stable'
+exec --no-startup-ud i3-msg 'workspace $ws3; exec /usr/bin/slack'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

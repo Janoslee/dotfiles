@@ -25,3 +25,6 @@ export SAVEHIS=10000
 # DOTFILES folder
 export DOTFILES="$HOME/PersonalProjects/dotfiles"
 
+# modify behavior of fzf
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
